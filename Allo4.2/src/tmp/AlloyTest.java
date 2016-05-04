@@ -17,10 +17,10 @@ public class AlloyTest {
     public static void main(String[] args) throws Exception {
         A4Reporter rep = new A4Reporter();
         
-        Module world = CompUtil.parseEverything_fromFile(rep, null, "ceilingsAndFloors.als");
+        Module world = CompUtil.parseEverything_fromFile(rep, null, "birthday.als");
         A4Options options = new A4Options();
         options.solver = A4Options.SatSolver.SAT4J;
-        options.skolemDepth = 1;
+        options.skolemDepth = 0;
         
         for (Command command : world.getAllCommands()) {
         	System.out.println(command.toString());
