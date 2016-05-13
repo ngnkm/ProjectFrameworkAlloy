@@ -66,6 +66,7 @@ public final class ExampleUsingTheCompiler {
             A4Options options = new A4Options();
 
             options.solver = A4Options.SatSolver.SAT4J;
+            options.skolemDepth = 1;
 
             for (Command command: world.getAllCommands()) {
                 // Execute the command
