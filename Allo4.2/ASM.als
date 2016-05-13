@@ -569,8 +569,8 @@ connectors=Equi_17}
 
 assert corecteness_Analysis {
 all s: TRCH+St+HP | NotIsolatedComponent[s]
-/*
-isTransfertPossible[St2, HP,St1] 
+
+/*some St1:St , St2: St| isTransfertPossible[St1, HP,St2] 
  isTransfertPossible[St1, HP,St2] 
  isBrassagePossible[St1, HP] 
  isBrassagePossible[St2, HP] */
