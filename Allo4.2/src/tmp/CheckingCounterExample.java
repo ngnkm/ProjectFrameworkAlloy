@@ -28,7 +28,7 @@ public class CheckingCounterExample {
 		//options
 		A4Options options = new A4Options();
 		options.solver = A4Options.SatSolver.SAT4J;
-		options.skolemDepth = 0;
+		options.skolemDepth = 2;
 		
         //recuperation de chaque commande du fichier  world.getAllCommands() dans ce cas, on a juste le check... c'est pouquoi on a un seul fichier de sortie
 		 for (Command command : world.getAllCommands()) {

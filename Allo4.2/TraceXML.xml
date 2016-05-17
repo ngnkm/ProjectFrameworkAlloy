@@ -155,16 +155,13 @@
 </field>
 
 <sig label="this/PC" ID="45" parentID="5" abstract="yes">
-   <atom label="PC$0"/>
 </sig>
 
 <field label="p1" ID="46" parentID="45">
-   <tuple> <atom label="PC$0"/> <atom label="PP$2"/> </tuple>
    <types> <type ID="45"/> <type ID="7"/> </types>
 </field>
 
 <field label="p2" ID="47" parentID="45">
-   <tuple> <atom label="PC$0"/> <atom label="PP$2"/> </tuple>
    <types> <type ID="45"/> <type ID="7"/> </types>
 </field>
 
@@ -184,22 +181,19 @@
 </field>
 
 <field label="p2" ID="51" parentID="49">
-   <tuple> <atom label="TRCH$0"/> <atom label="PP$4"/> </tuple>
+   <tuple> <atom label="TRCH$0"/> <atom label="PP$1"/> </tuple>
    <tuple> <atom label="TRCH$1"/> <atom label="PP$0"/> </tuple>
    <types> <type ID="49"/> <type ID="7"/> </types>
 </field>
 
 <sig label="this/TRUV" ID="52" parentID="5" abstract="yes">
-   <atom label="TRUV$0"/>
 </sig>
 
 <field label="p1" ID="53" parentID="52">
-   <tuple> <atom label="TRUV$0"/> <atom label="PP$3"/> </tuple>
    <types> <type ID="52"/> <type ID="7"/> </types>
 </field>
 
 <field label="p2" ID="54" parentID="52">
-   <tuple> <atom label="TRUV$0"/> <atom label="PP$3"/> </tuple>
    <types> <type ID="52"/> <type ID="7"/> </types>
 </field>
 
@@ -410,18 +404,13 @@
 </sig>
 
 <field label="ports" ID="113" parentID="74">
-   <tuple> <atom label="PC$0"/> <atom label="PP$2"/> </tuple>
-   <tuple> <atom label="TRUV$0"/> <atom label="PP$3"/> </tuple>
    <tuple> <atom label="TRCH$0"/> <atom label="PP$1"/> </tuple>
-   <tuple> <atom label="TRCH$0"/> <atom label="PP$4"/> </tuple>
    <tuple> <atom label="TRCH$1"/> <atom label="PP$0"/> </tuple>
    <types> <type ID="74"/> <type ID="114"/> </types>
 </field>
 
 <field label="actions" ID="115" parentID="74">
-   <tuple> <atom label="PC$0"/> <atom label="PP$2"/> <atom label="PP$2"/> </tuple>
-   <tuple> <atom label="TRUV$0"/> <atom label="PP$3"/> <atom label="PP$3"/> </tuple>
-   <tuple> <atom label="TRCH$0"/> <atom label="PP$1"/> <atom label="PP$4"/> </tuple>
+   <tuple> <atom label="TRCH$0"/> <atom label="PP$1"/> <atom label="PP$1"/> </tuple>
    <tuple> <atom label="TRCH$1"/> <atom label="PP$0"/> <atom label="PP$0"/> </tuple>
    <types> <type ID="74"/> <type ID="114"/> <type ID="114"/> </types>
 </field>
@@ -429,9 +418,6 @@
 <sig label="this/PP" ID="7" parentID="114" abstract="yes">
    <atom label="PP$0"/>
    <atom label="PP$1"/>
-   <atom label="PP$2"/>
-   <atom label="PP$3"/>
-   <atom label="PP$4"/>
 </sig>
 
 <sig label="this/IP" ID="64" parentID="114" abstract="yes">
@@ -449,15 +435,11 @@
 <field label="component" ID="116" parentID="114">
    <tuple> <atom label="PP$0"/> <atom label="TRCH$1"/> </tuple>
    <tuple> <atom label="PP$1"/> <atom label="TRCH$0"/> </tuple>
-   <tuple> <atom label="PP$2"/> <atom label="PC$0"/> </tuple>
-   <tuple> <atom label="PP$3"/> <atom label="TRUV$0"/> </tuple>
-   <tuple> <atom label="PP$4"/> <atom label="TRCH$0"/> </tuple>
    <types> <type ID="114"/> <type ID="74"/> </types>
 </field>
 
 <sig label="this/PL" ID="117" parentID="118" abstract="yes">
    <atom label="PL$0"/>
-   <atom label="PL$1"/>
 </sig>
 
 <sig label="this/IL" ID="119" parentID="118" abstract="yes">
@@ -473,37 +455,25 @@
 </sig>
 
 <field label="roles" ID="122" parentID="118">
-   <tuple> <atom label="PL$0"/> <atom label="Role$4"/> </tuple>
-   <tuple> <atom label="PL$1"/> <atom label="Role$0"/> </tuple>
-   <tuple> <atom label="PL$1"/> <atom label="Role$1"/> </tuple>
-   <tuple> <atom label="PL$1"/> <atom label="Role$2"/> </tuple>
-   <tuple> <atom label="PL$1"/> <atom label="Role$3"/> </tuple>
+   <tuple> <atom label="PL$0"/> <atom label="Role$0"/> </tuple>
+   <tuple> <atom label="PL$0"/> <atom label="Role$1"/> </tuple>
    <types> <type ID="118"/> <type ID="123"/> </types>
 </field>
 
 <sig label="this/Role" ID="123" parentID="2" abstract="yes">
    <atom label="Role$0"/>
    <atom label="Role$1"/>
-   <atom label="Role$2"/>
-   <atom label="Role$3"/>
-   <atom label="Role$4"/>
 </sig>
 
 <field label="connector" ID="124" parentID="123">
-   <tuple> <atom label="Role$0"/> <atom label="PL$1"/> </tuple>
-   <tuple> <atom label="Role$1"/> <atom label="PL$1"/> </tuple>
-   <tuple> <atom label="Role$2"/> <atom label="PL$1"/> </tuple>
-   <tuple> <atom label="Role$3"/> <atom label="PL$1"/> </tuple>
-   <tuple> <atom label="Role$4"/> <atom label="PL$0"/> </tuple>
+   <tuple> <atom label="Role$0"/> <atom label="PL$0"/> </tuple>
+   <tuple> <atom label="Role$1"/> <atom label="PL$0"/> </tuple>
    <types> <type ID="123"/> <type ID="118"/> </types>
 </field>
 
 <field label="connected" ID="125" parentID="123">
-   <tuple> <atom label="Role$0"/> <atom label="PP$4"/> </tuple>
-   <tuple> <atom label="Role$1"/> <atom label="PP$3"/> </tuple>
-   <tuple> <atom label="Role$2"/> <atom label="PP$2"/> </tuple>
-   <tuple> <atom label="Role$3"/> <atom label="PP$0"/> </tuple>
-   <tuple> <atom label="Role$4"/> <atom label="PP$1"/> </tuple>
+   <tuple> <atom label="Role$0"/> <atom label="PP$1"/> </tuple>
+   <tuple> <atom label="Role$1"/> <atom label="PP$0"/> </tuple>
    <types> <type ID="123"/> <type ID="114"/> </types>
 </field>
 
@@ -512,8 +482,6 @@
 </sig>
 
 <field label="components" ID="127" parentID="126">
-   <tuple> <atom label="Configuration$0"/> <atom label="PC$0"/> </tuple>
-   <tuple> <atom label="Configuration$0"/> <atom label="TRUV$0"/> </tuple>
    <tuple> <atom label="Configuration$0"/> <atom label="TRCH$0"/> </tuple>
    <tuple> <atom label="Configuration$0"/> <atom label="TRCH$1"/> </tuple>
    <types> <type ID="126"/> <type ID="74"/> </types>
@@ -521,14 +489,25 @@
 
 <field label="connectors" ID="128" parentID="126">
    <tuple> <atom label="Configuration$0"/> <atom label="PL$0"/> </tuple>
-   <tuple> <atom label="Configuration$0"/> <atom label="PL$1"/> </tuple>
    <types> <type ID="126"/> <type ID="118"/> </types>
 </field>
 
 <sig label="univ" ID="2" builtin="yes">
 </sig>
 
-<skolem label="$corecteness_Analysis_s" ID="129">
+<skolem label="$corecteness_Analysis_p" ID="129">
+   <tuple> <atom label="Role$0"/> <atom label="PP$1"/> </tuple>
+   <tuple> <atom label="Role$1"/> <atom label="PP$0"/> </tuple>
+   <types> <type ID="123"/> <type ID="114"/> </types>
+</skolem>
+
+<skolem label="$corecteness_Analysis_conf" ID="130">
+   <tuple> <atom label="PL$0"/> <atom label="TRCH$0"/> <atom label="Configuration$0"/> </tuple>
+   <tuple> <atom label="PL$0"/> <atom label="TRCH$1"/> <atom label="Configuration$0"/> </tuple>
+   <types> <type ID="118"/> <type ID="74"/> <type ID="126"/> </types>
+</skolem>
+
+<skolem label="$corecteness_Analysis_s" ID="131">
    <tuple> <atom label="TRCH$1"/> </tuple>
    <types> <type ID="49"/> </types>
    <types> <type ID="60"/> </types>
