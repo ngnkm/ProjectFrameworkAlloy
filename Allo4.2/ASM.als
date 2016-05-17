@@ -578,6 +578,6 @@ all s: TRCH+St+HP | NotIsolatedComponent[s]
 
 //pred show{}
 //
-//run show for 10
+//run show for 15
 
-check corecteness_Analysis for 5
+check corecteness_Analysis for 10
