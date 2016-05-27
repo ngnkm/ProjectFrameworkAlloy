@@ -1,6 +1,6 @@
 <alloy builddate="2015-02-22 18:21 EST">
 
-<instance bitwidth="0" maxseq="0" command="Check corecteness_Analysis for 5" filename="">
+<instance bitwidth="0" maxseq="0" command="Check BelowToo&apos; for 5 expect 0" filename="">
 
 <sig label="seq/Int" ID="0" parentID="1" builtin="yes">
 </sig>
@@ -11,507 +11,55 @@
 <sig label="String" ID="3" parentID="2" builtin="yes">
 </sig>
 
-<sig label="this/CE" ID="4" parentID="5" abstract="yes">
+<sig label="this/Platform" ID="4" parentID="2">
+   <atom label="Platform$0"/>
+   <atom label="Platform$1"/>
+   <atom label="Platform$2"/>
+   <atom label="Platform$3"/>
+   <atom label="Platform$4"/>
 </sig>
 
-<field label="p1" ID="6" parentID="4">
-   <types> <type ID="4"/> <type ID="7"/> </types>
-</field>
-
-<field label="p2" ID="8" parentID="4">
-   <types> <type ID="4"/> <type ID="7"/> </types>
-</field>
-
-<field label="p3" ID="9" parentID="4">
-   <types> <type ID="4"/> <type ID="7"/> </types>
-</field>
-
-<sig label="this/E" ID="10" parentID="5" abstract="yes">
+<sig label="this/Man" ID="5" parentID="2">
+   <atom label="Man$0"/>
+   <atom label="Man$1"/>
+   <atom label="Man$2"/>
+   <atom label="Man$3"/>
+   <atom label="Man$4"/>
 </sig>
 
-<field label="p1" ID="11" parentID="10">
-   <types> <type ID="10"/> <type ID="7"/> </types>
-</field>
-
-<field label="p2" ID="12" parentID="10">
-   <types> <type ID="10"/> <type ID="7"/> </types>
-</field>
-
-<field label="p3" ID="13" parentID="10">
-   <types> <type ID="10"/> <type ID="7"/> </types>
-</field>
-
-<field label="p4" ID="14" parentID="10">
-   <types> <type ID="10"/> <type ID="7"/> </types>
-</field>
-
-<sig label="this/CA" ID="15" parentID="5" abstract="yes">
-</sig>
-
-<field label="p1" ID="16" parentID="15">
-   <types> <type ID="15"/> <type ID="7"/> </types>
-</field>
-
-<field label="p2" ID="17" parentID="15">
-   <types> <type ID="15"/> <type ID="7"/> </types>
-</field>
-
-<field label="p3" ID="18" parentID="15">
-   <types> <type ID="15"/> <type ID="7"/> </types>
-</field>
-
-<field label="p4" ID="19" parentID="15">
-   <types> <type ID="15"/> <type ID="7"/> </types>
-</field>
-
-<sig label="this/V2VM" ID="20" parentID="5" abstract="yes">
-</sig>
-
-<field label="p1" ID="21" parentID="20">
-   <types> <type ID="20"/> <type ID="7"/> </types>
-</field>
-
-<field label="p2" ID="22" parentID="20">
-   <types> <type ID="20"/> <type ID="7"/> </types>
-</field>
-
-<field label="p3" ID="23" parentID="20">
-   <types> <type ID="20"/> <type ID="24"/> </types>
-</field>
-
-<sig label="this/V2VR" ID="25" parentID="5" abstract="yes">
-</sig>
-
-<field label="p1" ID="26" parentID="25">
-   <types> <type ID="25"/> <type ID="7"/> </types>
-</field>
-
-<field label="p2" ID="27" parentID="25">
-   <types> <type ID="25"/> <type ID="7"/> </types>
-</field>
-
-<field label="p3" ID="28" parentID="25">
-   <types> <type ID="25"/> <type ID="24"/> </types>
-</field>
-
-<sig label="this/V3VM" ID="29" parentID="5" abstract="yes">
-</sig>
-
-<field label="p1" ID="30" parentID="29">
-   <types> <type ID="29"/> <type ID="7"/> </types>
-</field>
-
-<field label="p2" ID="31" parentID="29">
-   <types> <type ID="29"/> <type ID="7"/> </types>
-</field>
-
-<field label="p3" ID="32" parentID="29">
-   <types> <type ID="29"/> <type ID="7"/> </types>
-</field>
-
-<field label="p4" ID="33" parentID="29">
-   <types> <type ID="29"/> <type ID="24"/> </types>
-</field>
-
-<sig label="this/V3V" ID="34" parentID="5" abstract="yes">
-</sig>
-
-<field label="p1" ID="35" parentID="34">
-   <types> <type ID="34"/> <type ID="7"/> </types>
-</field>
-
-<field label="p2" ID="36" parentID="34">
-   <types> <type ID="34"/> <type ID="7"/> </types>
-</field>
-
-<field label="p3" ID="37" parentID="34">
-   <types> <type ID="34"/> <type ID="7"/> </types>
-</field>
-
-<sig label="this/HP" ID="38" parentID="5" abstract="yes">
-</sig>
-
-<field label="p1" ID="39" parentID="38">
-   <types> <type ID="38"/> <type ID="7"/> </types>
-</field>
-
-<field label="p2" ID="40" parentID="38">
-   <types> <type ID="38"/> <type ID="7"/> </types>
-</field>
-
-<sig label="this/Cl" ID="41" parentID="5" abstract="yes">
-</sig>
-
-<field label="p1" ID="42" parentID="41">
-   <types> <type ID="41"/> <type ID="7"/> </types>
-</field>
-
-<field label="p2" ID="43" parentID="41">
-   <types> <type ID="41"/> <type ID="7"/> </types>
-</field>
-
-<field label="p3" ID="44" parentID="41">
-   <types> <type ID="41"/> <type ID="7"/> </types>
-</field>
-
-<sig label="this/PC" ID="45" parentID="5" abstract="yes">
-</sig>
-
-<field label="p1" ID="46" parentID="45">
-   <types> <type ID="45"/> <type ID="7"/> </types>
-</field>
-
-<field label="p2" ID="47" parentID="45">
-   <types> <type ID="45"/> <type ID="7"/> </types>
-</field>
-
-<field label="p3" ID="48" parentID="45">
-   <types> <type ID="45"/> <type ID="24"/> </types>
-</field>
-
-<sig label="this/TRCH" ID="49" parentID="5" abstract="yes">
-   <atom label="TRCH$0"/>
-   <atom label="TRCH$1"/>
-</sig>
-
-<field label="p1" ID="50" parentID="49">
-   <tuple> <atom label="TRCH$0"/> <atom label="PP$1"/> </tuple>
-   <tuple> <atom label="TRCH$1"/> <atom label="PP$0"/> </tuple>
-   <types> <type ID="49"/> <type ID="7"/> </types>
-</field>
-
-<field label="p2" ID="51" parentID="49">
-   <tuple> <atom label="TRCH$0"/> <atom label="PP$1"/> </tuple>
-   <tuple> <atom label="TRCH$1"/> <atom label="PP$0"/> </tuple>
-   <types> <type ID="49"/> <type ID="7"/> </types>
-</field>
-
-<sig label="this/TRUV" ID="52" parentID="5" abstract="yes">
-</sig>
-
-<field label="p1" ID="53" parentID="52">
-   <types> <type ID="52"/> <type ID="7"/> </types>
-</field>
-
-<field label="p2" ID="54" parentID="52">
-   <types> <type ID="52"/> <type ID="7"/> </types>
-</field>
-
-<sig label="this/Osm" ID="55" parentID="5" abstract="yes">
-</sig>
-
-<field label="p1" ID="56" parentID="55">
-   <types> <type ID="55"/> <type ID="7"/> </types>
-</field>
-
-<field label="p2" ID="57" parentID="55">
-   <types> <type ID="55"/> <type ID="7"/> </types>
-</field>
-
-<field label="p3" ID="58" parentID="55">
-   <types> <type ID="55"/> <type ID="7"/> </types>
-</field>
-
-<field label="p4" ID="59" parentID="55">
-   <types> <type ID="55"/> <type ID="7"/> </types>
-</field>
-
-<sig label="this/St" ID="60" parentID="5" abstract="yes">
-</sig>
-
-<field label="p1" ID="61" parentID="60">
-   <types> <type ID="60"/> <type ID="7"/> </types>
-</field>
-
-<field label="p2" ID="62" parentID="60">
-   <types> <type ID="60"/> <type ID="7"/> </types>
-</field>
-
-<field label="p3" ID="63" parentID="60">
-   <types> <type ID="60"/> <type ID="64"/> </types>
-</field>
-
-<sig label="this/Interface" ID="65" parentID="5" abstract="yes">
-</sig>
-
-<field label="p1" ID="66" parentID="65">
-   <types> <type ID="65"/> <type ID="7"/> </types>
-</field>
-
-<field label="p2" ID="67" parentID="65">
-   <types> <type ID="65"/> <type ID="7"/> </types>
-</field>
-
-<sig label="this/Lm" ID="68" parentID="5" abstract="yes">
-</sig>
-
-<field label="p1" ID="69" parentID="68">
-   <types> <type ID="68"/> <type ID="7"/> </types>
-</field>
-
-<field label="p2" ID="70" parentID="68">
-   <types> <type ID="68"/> <type ID="7"/> </types>
-</field>
-
-<sig label="this/F" ID="71" parentID="5" abstract="yes">
-</sig>
-
-<field label="p1" ID="72" parentID="71">
-   <types> <type ID="71"/> <type ID="7"/> </types>
-</field>
-
-<field label="p2" ID="73" parentID="71">
-   <types> <type ID="71"/> <type ID="7"/> </types>
-</field>
-
-<sig label="this/Process" ID="5" parentID="74" abstract="yes">
-</sig>
-
-<sig label="this/MontNiv" ID="75" parentID="76" abstract="yes">
-</sig>
-
-<field label="p1" ID="77" parentID="75">
-   <types> <type ID="75"/> <type ID="64"/> </types>
-</field>
-
-<sig label="this/FS" ID="78" parentID="76" abstract="yes">
-</sig>
-
-<field label="p1" ID="79" parentID="78">
-   <types> <type ID="78"/> <type ID="64"/> </types>
-</field>
-
-<field label="p2" ID="80" parentID="78">
-   <types> <type ID="78"/> <type ID="24"/> </types>
-</field>
-
-<field label="p3" ID="81" parentID="78">
-   <types> <type ID="78"/> <type ID="82"/> </types>
-</field>
-
-<sig label="this/FAL" ID="83" parentID="76" abstract="yes">
-</sig>
-
-<field label="p1" ID="84" parentID="83">
-   <types> <type ID="83"/> <type ID="82"/> </types>
-</field>
-
-<sig label="this/FT" ID="85" parentID="76" abstract="yes">
-</sig>
-
-<field label="p1" ID="86" parentID="85">
-   <types> <type ID="85"/> <type ID="64"/> </types>
-</field>
-
-<field label="p2" ID="87" parentID="85">
-   <types> <type ID="85"/> <type ID="82"/> </types>
-</field>
-
-<sig label="this/FI" ID="88" parentID="76" abstract="yes">
-</sig>
-
-<field label="p1" ID="89" parentID="88">
-   <types> <type ID="88"/> <type ID="82"/> </types>
-</field>
-
-<sig label="this/TI" ID="90" parentID="76" abstract="yes">
-</sig>
-
-<field label="p1" ID="91" parentID="90">
-   <types> <type ID="90"/> <type ID="82"/> </types>
-</field>
-
-<sig label="this/TC" ID="92" parentID="76" abstract="yes">
-</sig>
-
-<field label="p1" ID="93" parentID="92">
-   <types> <type ID="92"/> <type ID="24"/> </types>
-</field>
-
-<sig label="this/TT" ID="94" parentID="76" abstract="yes">
-</sig>
-
-<field label="p1" ID="95" parentID="94">
-   <types> <type ID="94"/> <type ID="64"/> </types>
-</field>
-
-<field label="p2" ID="96" parentID="94">
-   <types> <type ID="94"/> <type ID="24"/> </types>
-</field>
-
-<field label="p3" ID="97" parentID="94">
-   <types> <type ID="94"/> <type ID="82"/> </types>
-</field>
-
-<sig label="this/FQ" ID="98" parentID="76" abstract="yes">
-</sig>
-
-<field label="p1" ID="99" parentID="98">
-   <types> <type ID="98"/> <type ID="82"/> </types>
-</field>
-
-<sig label="this/LAH" ID="100" parentID="76" abstract="yes">
-</sig>
-
-<field label="p1" ID="101" parentID="100">
-   <types> <type ID="100"/> <type ID="82"/> </types>
-</field>
-
-<sig label="this/LS" ID="102" parentID="76" abstract="yes">
-</sig>
-
-<field label="p1" ID="103" parentID="102">
-   <types> <type ID="102"/> <type ID="64"/> </types>
-</field>
-
-<field label="p2" ID="104" parentID="102">
-   <types> <type ID="102"/> <type ID="24"/> </types>
-</field>
-
-<field label="p3" ID="105" parentID="102">
-   <types> <type ID="102"/> <type ID="82"/> </types>
-</field>
-
-<sig label="this/LI" ID="106" parentID="76" abstract="yes">
-</sig>
-
-<field label="p1" ID="107" parentID="106">
-   <types> <type ID="106"/> <type ID="64"/> </types>
-</field>
-
-<sig label="this/LT" ID="108" parentID="76" abstract="yes">
-</sig>
-
-<field label="p1" ID="109" parentID="108">
-   <types> <type ID="108"/> <type ID="82"/> </types>
-</field>
-
-<field label="p2" ID="110" parentID="108">
-   <types> <type ID="108"/> <type ID="64"/> </types>
-</field>
-
-<sig label="this/MesNiv" ID="111" parentID="76" abstract="yes">
-</sig>
-
-<field label="p1" ID="112" parentID="111">
-   <types> <type ID="111"/> <type ID="82"/> </types>
-</field>
-
-<sig label="this/Instrument" ID="76" parentID="74" abstract="yes">
-</sig>
-
-<sig label="this/Component" ID="74" parentID="2" abstract="yes">
-</sig>
-
-<field label="ports" ID="113" parentID="74">
-   <tuple> <atom label="TRCH$0"/> <atom label="PP$1"/> </tuple>
-   <tuple> <atom label="TRCH$1"/> <atom label="PP$0"/> </tuple>
-   <types> <type ID="74"/> <type ID="114"/> </types>
-</field>
-
-<field label="actions" ID="115" parentID="74">
-   <tuple> <atom label="TRCH$0"/> <atom label="PP$1"/> <atom label="PP$1"/> </tuple>
-   <tuple> <atom label="TRCH$1"/> <atom label="PP$0"/> <atom label="PP$0"/> </tuple>
-   <types> <type ID="74"/> <type ID="114"/> <type ID="114"/> </types>
-</field>
-
-<sig label="this/PP" ID="7" parentID="114" abstract="yes">
-   <atom label="PP$0"/>
-   <atom label="PP$1"/>
-</sig>
-
-<sig label="this/IP" ID="64" parentID="114" abstract="yes">
-</sig>
-
-<sig label="this/EP" ID="24" parentID="114" abstract="yes">
-</sig>
-
-<sig label="this/SP" ID="82" parentID="114" abstract="yes">
-</sig>
-
-<sig label="this/Port" ID="114" parentID="2" abstract="yes">
-</sig>
-
-<field label="component" ID="116" parentID="114">
-   <tuple> <atom label="PP$0"/> <atom label="TRCH$1"/> </tuple>
-   <tuple> <atom label="PP$1"/> <atom label="TRCH$0"/> </tuple>
-   <types> <type ID="114"/> <type ID="74"/> </types>
-</field>
-
-<sig label="this/PL" ID="117" parentID="118" abstract="yes">
-   <atom label="PL$0"/>
-</sig>
-
-<sig label="this/IL" ID="119" parentID="118" abstract="yes">
-</sig>
-
-<sig label="this/EL" ID="120" parentID="118" abstract="yes">
-</sig>
-
-<sig label="this/SL" ID="121" parentID="118" abstract="yes">
-</sig>
-
-<sig label="this/Connector" ID="118" parentID="2" abstract="yes">
-</sig>
-
-<field label="roles" ID="122" parentID="118">
-   <tuple> <atom label="PL$0"/> <atom label="Role$0"/> </tuple>
-   <tuple> <atom label="PL$0"/> <atom label="Role$1"/> </tuple>
-   <types> <type ID="118"/> <type ID="123"/> </types>
-</field>
-
-<sig label="this/Role" ID="123" parentID="2" abstract="yes">
-   <atom label="Role$0"/>
-   <atom label="Role$1"/>
-</sig>
-
-<field label="connector" ID="124" parentID="123">
-   <tuple> <atom label="Role$0"/> <atom label="PL$0"/> </tuple>
-   <tuple> <atom label="Role$1"/> <atom label="PL$0"/> </tuple>
-   <types> <type ID="123"/> <type ID="118"/> </types>
-</field>
-
-<field label="connected" ID="125" parentID="123">
-   <tuple> <atom label="Role$0"/> <atom label="PP$1"/> </tuple>
-   <tuple> <atom label="Role$1"/> <atom label="PP$0"/> </tuple>
-   <types> <type ID="123"/> <type ID="114"/> </types>
-</field>
-
-<sig label="this/Configuration" ID="126" parentID="2" abstract="yes">
-   <atom label="Configuration$0"/>
-</sig>
-
-<field label="components" ID="127" parentID="126">
-   <tuple> <atom label="Configuration$0"/> <atom label="TRCH$0"/> </tuple>
-   <tuple> <atom label="Configuration$0"/> <atom label="TRCH$1"/> </tuple>
-   <types> <type ID="126"/> <type ID="74"/> </types>
-</field>
-
-<field label="connectors" ID="128" parentID="126">
-   <tuple> <atom label="Configuration$0"/> <atom label="PL$0"/> </tuple>
-   <types> <type ID="126"/> <type ID="118"/> </types>
+<field label="ceiling" ID="6" parentID="5">
+   <tuple> <atom label="Man$0"/> <atom label="Platform$4"/> </tuple>
+   <tuple> <atom label="Man$1"/> <atom label="Platform$4"/> </tuple>
+   <tuple> <atom label="Man$2"/> <atom label="Platform$3"/> </tuple>
+   <tuple> <atom label="Man$3"/> <atom label="Platform$3"/> </tuple>
+   <tuple> <atom label="Man$4"/> <atom label="Platform$4"/> </tuple>
+   <types> <type ID="5"/> <type ID="4"/> </types>
+</field>
+
+<field label="floor" ID="7" parentID="5">
+   <tuple> <atom label="Man$0"/> <atom label="Platform$3"/> </tuple>
+   <tuple> <atom label="Man$1"/> <atom label="Platform$3"/> </tuple>
+   <tuple> <atom label="Man$2"/> <atom label="Platform$4"/> </tuple>
+   <tuple> <atom label="Man$3"/> <atom label="Platform$4"/> </tuple>
+   <tuple> <atom label="Man$4"/> <atom label="Platform$2"/> </tuple>
+   <types> <type ID="5"/> <type ID="4"/> </types>
 </field>
 
 <sig label="univ" ID="2" builtin="yes">
 </sig>
 
-<skolem label="$corecteness_Analysis_p" ID="129">
-   <tuple> <atom label="Role$0"/> <atom label="PP$1"/> </tuple>
-   <tuple> <atom label="Role$1"/> <atom label="PP$0"/> </tuple>
-   <types> <type ID="123"/> <type ID="114"/> </types>
+<skolem label="$BelowToo&apos;_n" ID="8">
+   <tuple> <atom label="Man$0"/> <atom label="Man$3"/> </tuple>
+   <tuple> <atom label="Man$1"/> <atom label="Man$2"/> </tuple>
+   <tuple> <atom label="Man$2"/> <atom label="Man$0"/> </tuple>
+   <tuple> <atom label="Man$3"/> <atom label="Man$0"/> </tuple>
+   <tuple> <atom label="Man$4"/> <atom label="Man$2"/> </tuple>
+   <types> <type ID="5"/> <type ID="5"/> </types>
 </skolem>
 
-<skolem label="$corecteness_Analysis_conf" ID="130">
-   <tuple> <atom label="PL$0"/> <atom label="TRCH$0"/> <atom label="Configuration$0"/> </tuple>
-   <tuple> <atom label="PL$0"/> <atom label="TRCH$1"/> <atom label="Configuration$0"/> </tuple>
-   <types> <type ID="118"/> <type ID="74"/> <type ID="126"/> </types>
-</skolem>
-
-<skolem label="$corecteness_Analysis_s" ID="131">
-   <tuple> <atom label="TRCH$1"/> </tuple>
-   <types> <type ID="49"/> </types>
-   <types> <type ID="60"/> </types>
-   <types> <type ID="38"/> </types>
+<skolem label="$BelowToo&apos;_m" ID="9">
+   <tuple> <atom label="Man$4"/> </tuple>
+   <types> <type ID="5"/> </types>
 </skolem>
 
 </instance>

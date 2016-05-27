@@ -23,7 +23,7 @@ public class CheckingCounterExample {
 		A4Reporter rep = new A4Reporter();
 		
 		//creation d'un monde grace a un model issu d'une chaine de caractere et du reporter associé 
-		Module world = CompUtil.parseEverything_fromFile(rep, null, "ASM.als");
+		Module world = CompUtil.parseEverything_fromFile(rep, null, "ceilingsAndFloors.als");
 		
 		//options
 		A4Options options = new A4Options();
@@ -46,15 +46,15 @@ public class CheckingCounterExample {
 	                if(!(sol.satisfiable()))return;
 	  
 	                System.out.println("Results Checking:");
-	                sol = sol.next().next();
-	                Expr e1 = CompUtil.parseOneExpression_fromString(world, "{t:TRCH+St+HP| not NotIsolatedComponent[t]}");
+	                //sol = sol.next().next();
+	                Expr e1 = CompUtil.parseOneExpression_fromString(world, " some m1: Man |  not Geometry and (all n: Man | m1.Above[n])");
 	                System.out.println("\n"+e1);
 		            System.out.println(sol.eval(e1));
 		            System.out.println("----------------------------------------------------------------------");
 		            
-		            Expr e2 = CompUtil.parseOneExpression_fromString(world, "some St1:St , St2: St| isTransfertPossible[St1, HP,St2] ");
+		           /* Expr e2 = CompUtil.parseOneExpression_fromString(world, "some St1:St , St2: St| isTransfertPossible[St1, HP,St2] ");
 	                System.out.println(e2);
-		            System.out.println(sol.eval(e2));
+		            System.out.println(sol.eval(e2));*/
 		            
 	                sol.writeXML(outputfilename);
 	                sol.next().next().writeXML(outputfilename2);

@@ -572,12 +572,12 @@ all s: TRCH+St+HP | NotIsolatedComponent[s]
 
 /*some St1:St , St2: St| isTransfertPossible[St1, HP,St2] 
  isTransfertPossible[St1, HP,St2] 
- isBrassagePossible[St1, HP] 
+	[St1, HP] 
  isBrassagePossible[St2, HP] */
 }
 
 //pred show{}
 //
-//run show for 15
+//run show for 10
 
 check corecteness_Analysis for 10
